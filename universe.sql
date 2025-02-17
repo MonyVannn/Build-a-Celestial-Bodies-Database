@@ -1,12 +1,12 @@
 ------------------------------------------------------------
-1. Create Database and connect to it
+-- 1. Create Database and connect to it
 ------------------------------------------------------------
 CREATE DATABASE universe;
 
 \c universe
 
 ------------------------------------------------------------
-2. Create tables as required conditions
+-- 2. Create tables as required conditions
 ------------------------------------------------------------
 CREATE TABLE galaxy (
     galaxy_id SERIAL NOT NULL,
@@ -66,7 +66,7 @@ CREATE TABLE more_info (
 );
 
 ------------------------------------------------------------
-3. Fill the tables as required data conditions
+-- 3. Fill the tables as required data conditions
 ------------------------------------------------------------
 INSERT INTO galaxy VALUES 
 (1, 1, 'galaxy1', 500, 750, 1500.75, 'solid', true, true),
@@ -128,7 +128,7 @@ INSERT INTO more_info VALUES
 (5, 5, 'info5', 'lorem impsum');
 
 ------------------------------------------------------------
-4. Primary Key and Foreign Key assignment
+-- 4. Primary Key and Foreign Key assignment
 ------------------------------------------------------------
 ALTER TABLE galaxy    ADD PRIMARY KEY (galaxy_id);
 ALTER TABLE star      ADD PRIMARY KEY (star_id);
